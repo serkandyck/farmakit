@@ -1,5 +1,7 @@
 @extends('layouts.auth')
 
+@section('title', 'Kullanıcı Girişi')
+
 @section('content')
     <section class="section">
       <div class="container mt-5">
