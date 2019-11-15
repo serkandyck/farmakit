@@ -26,6 +26,3 @@ Route::middleware(['auth:web'])->group(function () {
 });
 
 Auth::routes(['register' => false]);
-
-
-Route::get('olcum', 'OlcumController@index');
