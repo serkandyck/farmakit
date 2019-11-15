@@ -1,91 +1,70 @@
-@extends('layouts.app', [
-    'namePage' => 'Login page',
-    'class' => 'login-page sidebar-mini ',
-    'activePage' => 'login',
-    'backgroundImage' => asset('assets') . "/img/bg14.jpg",
-])
+@extends('layouts.auth')
 
 @section('content')
-    <div class="content">
-        <div class="container">
-        <div class="col-md-12 ml-auto mr-auto">
-            <div class="header bg-gradient-primary py-10 py-lg-2 pt-lg-12">
-                <div class="container">
-                    <div class="header-body text-center mb-7">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12 col-md-9">
-                                <p class="text-lead text-light mt-3 mb-0">
-                                    @include('alerts.migrations_check')
-                                </p>
-                            </div>
-                            <div class="col-lg-5 col-md-6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+            <div class="login-brand">
+              <img src="/img/logo.png" alt="logo" width="275">
             </div>
-        </div>
-        <div class="col-md-4 ml-auto mr-auto">
-            <form role="form" method="POST" action="{{ route('login') }}">
-                @csrf
-            <div class="card card-login card-plain">
-                <div class="card-header ">
-                <div class="logo-container">
-                    <img src="{{ asset('assets/img/now-logo.png') }}" alt="">
-                </div>
-                </div>
-                <div class="card-body ">
-                <div class="input-group no-border form-control-lg {{ $errors->has('email') ? ' has-danger' : '' }}">
-                    <span class="input-group-prepend">
-                    <div class="input-group-text">
-                        <i class="now-ui-icons users_circle-08"></i>
-                    </div>
-                    </span>
-                    <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="E-mail adresiniz" type="email" name="email" value="{{ old('email') }}" required autofocus>
-                </div>
-                @if ($errors->has('email'))
-                    <span class="invalid-feedback" style="display: block;" role="alert">
-                    <strong>{{ $errors->first('email') }}</strong>
-                    </span>
-                @endif
-                <div class="input-group no-border form-control-lg {{ $errors->has('password') ? ' has-danger' : '' }}">
-                    <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <i class="now-ui-icons objects_key-25"></i></i>
-                    </div>
-                    </div>
-                    <input placeholder="Şifreniz" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" type="password" required>
-                </div>
-                @if ($errors->has('password'))
-                    <span class="invalid-feedback" style="display: block;" role="alert">
-                    <strong>{{ $errors->first('password') }}</strong>
-                    </span>
-                @endif
-                </div>
-                <div class="card-footer ">
-                <button  type = "submit" class="btn btn-primary btn-lg btn-block mb-3">Kullanıcı Girişi</button>
-                <div class="pull-left">
-                    <h6>
-                    <a href="#" class="link footer-link">MÜŞTERİMİZ OLUN</a>
-                    </h6>
-                </div>
-                <div class="pull-right">
-                    <h6>
-                    <a href="{{ route('password.request') }}" class="link footer-link">ŞİFREMİ Unuttum</a>
-                    </h6>                
-                </div>
-                </div>
-            </div>
-            </form>
-        </div>
-        </div>
-    </div>
-@endsection
 
-@push('js')
-    <script>
-        $(document).ready(function() {
-        demo.checkFullPageBackgroundImage();
-        });
-    </script>
-@endpush
+            <div class="card card-primary">
+              <div class="card-header"><h4>Kullanıcı Girişi</h4></div>
+
+              <div class="card-body">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                  <div class="form-group">
+                    <label for="email">E-mail adresiniz</label>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus tabindex="1">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                  </div>
+
+                  <div class="form-group">
+                    <div class="d-block">
+                        <label for="password" class="control-label">Şifreniz</label>
+                      <div class="float-right">
+                        <a href="{{ route('password.request') }}" class="text-small">
+                          Şifremi Unuttum?
+                        </a>
+                      </div>
+                    </div>
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" tabindex="2">
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                  </div>
+
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} class="custom-control-input" tabindex="3">
+                      <label class="custom-control-label" for="remember-me">Beni Hatırla</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                      GİRİŞ
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="mt-5 text-muted text-center">
+              Henüz üye değilmisiniz? <a href="http://farmakit.com/siparis-islemleri">Sipariş Verin</a>
+            </div>
+            <div class="simple-footer">
+              Tüm Hakları Saklıdır &copy; OrbiKey 2019
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+@endsection
