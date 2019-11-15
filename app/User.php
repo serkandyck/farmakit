@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'ad_soyad', 'tel', 'adres', 'firma_ad', 'il_id', 'ilce_id', 'type'
     ];
 
     /**
@@ -50,5 +50,10 @@ class User extends Authenticatable
 
     public function isAdmin()    {        
         return $this->type === self::ADMIN_TYPE;    
+    }
+
+    public function cihazlar()
+    {
+        return $this->hasMany('App\Cihaz', 'user_id', 'id');
     }
 }

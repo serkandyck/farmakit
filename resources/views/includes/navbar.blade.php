@@ -6,29 +6,38 @@
             <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
-            <input style="cursor: pointer;color: transparent;text-shadow: 0 0 0;" class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
-            <button class="btn" type="submit"><i class="fas fa-caret-down"></i></button>
+            @if(isset(Auth::user()->cihazlar[0]))
+              <input style="cursor: pointer;color: transparent;text-shadow: 0 0 0;" class="form-control" type="search" placeholder="CİHAZ: {{Auth::user()->cihazlar[0]->model}}" data-width="250">
+            @else
+              <input style="cursor: pointer;color: transparent;text-shadow: 0 0 0;" class="form-control" type="search" placeholder="CİHAZ BULUNAMADI" data-width="250">
+            @endif
+            
+            <a class="btn"><i class="fas fa-caret-down"></i></a>
             <div class="search-backdrop"></div>
             <div class="search-result">
               <div class="search-header">
                 CİHAZLAR
               </div>
-              <div class="search-item">
-                <a href="#">
-                  <div class="search-icon bg-danger text-white mr-3">
-                    <i class="fas fa-code"></i>
+              @if(count(Auth::user()->cihazlar) > 0)
+                @foreach(Auth::user()->cihazlar as $cihaz)
+                  <div class="search-item">
+                    <a style="flex:1 0 auto;" href="#">
+                      <div class="search-icon bg-danger text-white mr-3">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      MODEL : {{ $cihaz->model }} </br>
+                      <span>VERSİYON : {{ $cihaz->versiyon }}</span>
+                    </a>
                   </div>
-                  Stisla Admin Template
-                </a>
-              </div>
-              <div class="search-item">
-                <a href="#">
-                  <div class="search-icon bg-primary text-white mr-3">
-                    <i class="fas fa-laptop"></i>
+                @endforeach
+              @else
+                  <div class="search-item">
+                    <a href="#">
+                      <span style="color: red;">SİSTEME TANIMLI CİHAZ BULUNAMADI</span>
+                    </a>
                   </div>
-                  Create a new Homepage Design
-                </a>
-              </div>
+              @endif
+              
             </div>
           </div>
         </form>
