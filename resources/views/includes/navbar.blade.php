@@ -1,124 +1,60 @@
-<div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar">
-        <form class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
-          </ul>
-          <div class="search-element">
-            @if(isset(Auth::user()->cihazlar[0]))
-              <input style="cursor: pointer;color: transparent;text-shadow: 0 0 0;" class="form-control" type="search" placeholder="CİHAZ: {{Auth::user()->cihazlar[0]->model}}" data-width="250">
-            @else
-              <input style="cursor: pointer;color: transparent;text-shadow: 0 0 0;" class="form-control" type="search" placeholder="CİHAZ BULUNAMADI" data-width="250">
-            @endif
-            
-            <a class="btn"><i class="fas fa-caret-down"></i></a>
-            <div class="search-backdrop"></div>
-            <div class="search-result">
-              <div class="search-header">
-                CİHAZLAR
-              </div>
-              @if(count(Auth::user()->cihazlar) > 0)
-                @foreach(Auth::user()->cihazlar as $cihaz)
-                  <div class="search-item">
-                    <a style="flex:1 0 auto;" href="#">
-                      <div class="search-icon bg-danger text-white mr-3">
-                        <i class="fas fa-code"></i>
-                      </div>
-                      MODEL : {{ $cihaz->model }} </br>
-                      <span>VERSİYON : {{ $cihaz->versiyon }}</span>
-                    </a>
-                  </div>
-                @endforeach
-              @else
-                  <div class="search-item">
-                    <a href="#">
-                      <span style="color: red;">SİSTEME TANIMLI CİHAZ BULUNAMADI</span>
-                    </a>
-                  </div>
-              @endif
-              
-            </div>
+<header class="header-top" header-theme="light">
+  <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+          <div class="top-menu d-flex align-items-center">
+              <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+              <button type="button" id="navbar-fullscreen" class="nav-link"><i class="ik ik-maximize"></i></button>
           </div>
-        </form>
-        <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Notifications
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
+          <div class="top-menu d-flex align-items-center">
+              <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-bell"></i><span class="badge bg-danger">3</span></a>
+                  <div class="dropdown-menu dropdown-menu-right notification-dropdown" aria-labelledby="notiDropdown">
+                      <h4 class="header">Notifications</h4>
+                      <div class="notifications-wrap">
+                          <a href="#" class="media">
+                              <span class="d-flex">
+                                  <i class="ik ik-check"></i> 
+                              </span>
+                              <span class="media-body">
+                                  <span class="heading-font-family media-heading">Invitation accepted</span> 
+                                  <span class="media-content">Your have been Invited ...</span>
+                              </span>
+                          </a>
+                          <a href="#" class="media">
+                              <span class="d-flex">
+                                  <img src="img/users/1.jpg" class="rounded-circle" alt="">
+                              </span>
+                              <span class="media-body">
+                                  <span class="heading-font-family media-heading">Steve Smith</span> 
+                                  <span class="media-content">I slowly updated projects</span>
+                              </span>
+                          </a>
+                          <a href="#" class="media">
+                              <span class="d-flex">
+                                  <i class="ik ik-calendar"></i> 
+                              </span>
+                              <span class="media-body">
+                                  <span class="heading-font-family media-heading">To Do</span> 
+                                  <span class="media-content">Meeting with Nathan on Friday 8 AM ...</span>
+                              </span>
+                          </a>
+                      </div>
+                      <div class="footer"><a href="javascript:void(0);">See all activity</a></div>
+                  </div>
               </div>
-              <div class="dropdown-list-content dropdown-list-icons">
-                <a href="#" class="dropdown-item dropdown-item-unread">
-                  <div class="dropdown-item-icon bg-primary text-white">
-                    <i class="fas fa-code"></i>
+              <button type="button" class="nav-link ml-10" id="apps_modal_btn" data-toggle="modal" data-target="#appsModal"><i class="ik ik-grid"></i></button>
+              <div class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="img/user.jpg" alt=""></a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                      <a class="dropdown-item" href="profile.html"><i class="ik ik-user dropdown-icon"></i> Profile</a>
+                      <a class="dropdown-item" href="#"><i class="ik ik-settings dropdown-icon"></i> Settings</a>
+                      <a class="dropdown-item" href="#"><span class="float-right"><span class="badge badge-primary">6</span></span><i class="ik ik-mail dropdown-icon"></i> Inbox</a>
+                      <a class="dropdown-item" href="#"><i class="ik ik-navigation dropdown-icon"></i> Message</a>
+                      <a class="dropdown-item" href="login.html"><i class="ik ik-power dropdown-icon"></i> Logout</a>
                   </div>
-                  <div class="dropdown-item-desc">
-                    Template update is available now!
-                    <div class="time text-primary">2 Min Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-icon bg-info text-white">
-                    <i class="far fa-user"></i>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>You</b> and <b>Dedik Sugiharto</b> are now friends
-                    <div class="time">10 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-icon bg-success text-white">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
-                    <div class="time">12 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-icon bg-danger text-white">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    Low disk space. Let's clean it!
-                    <div class="time">17 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-icon bg-info text-white">
-                    <i class="fas fa-bell"></i>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    Welcome to Stisla template!
-                    <div class="time">Yesterday</div>
-                  </div>
-                </a>
               </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Merhaba, {{ Auth::user()->ad_soyad }}</div></a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a href="features-profile.html" class="dropdown-item has-icon">
-                <i class="far fa-user"></i> Profil
-              </a>
-              <a href="features-activities.html" class="dropdown-item has-icon">
-                <i class="fas fa-bolt"></i> Bildirimler
-              </a>
-              <a href="features-settings.html" class="dropdown-item has-icon">
-                <i class="fas fa-cog"></i> Ayarlar
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="/logout" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Çıkış
-              </a>
-            </div>
-          </li>
-        </ul>
-      </nav>
+
+          </div>
+      </div>
+  </div>
+</header>
