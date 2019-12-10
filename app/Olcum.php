@@ -9,7 +9,8 @@ class Olcum extends Model
     protected $table = 'olcum';
 
     protected $fillable = [
-    	'sensor_id',
+    	'type_id',
+    	'cihaz_id'
     	'deger',
     	'tarih'
     ];
