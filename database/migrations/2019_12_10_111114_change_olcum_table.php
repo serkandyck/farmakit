@@ -15,7 +15,7 @@ class ChangeOlcumTable extends Migration
     {
         Schema::table('olcum', function (Blueprint $table) {
             $table->renameColumn('sensor_id', 'type_id');
-            $table->integer('cihaz_id')->unsigned()->after('type_id');
+            $table->integer('cihaz_id')->unsigned()->after('sensor_id');
         });
     }
 
