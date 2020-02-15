@@ -14,17 +14,13 @@
               <div class="nav-item active">
                   <a href="/"><i class="ik ik-bar-chart-2"></i><span>Gösterge Paneli</span></a>
               </div>
-              <div class="nav-lavel">UI Element</div>
-              <div class="nav-item has-sub">
-                  <a href="#"><i class="ik ik-box"></i><span>Basic</span></a>
-                  <div class="submenu-content">
-                      <a href="pages/ui/alerts.html" class="menu-item">Alerts</a>
-                      <a href="pages/ui/badges.html" class="menu-item">Badges</a>
-                      <a href="pages/ui/buttons.html" class="menu-item">Buttons</a>
-                      <a href="pages/ui/navigation.html" class="menu-item">Navigation</a>
-                  </div>
+              <div class="nav-lavel">Veriler</div>
+              <div class="nav-item">
+                  <a href="#"><i class="ik ik-box"></i><span>Tüm Veriler</span></a>
               </div>
-              
+              <div class="nav-item" id="customize-menu">
+                  <a href="/settings"><i class="ik ik-settings"></i><span>Ayarlar</span></a>
+              </div>
           </nav>
       </div>
   </div>

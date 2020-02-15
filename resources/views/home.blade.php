@@ -5,172 +5,41 @@
 @section('content')
   <div class="main-content">
     <div class="container-fluid">
-        <div class="row clearfix">
-          <div class="col-md-12 mb-4 pl-0 pr-0">
-              <div class="owl-container">
-                  <div class="owl-carousel basic">
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-1.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Homemade Cheesecake with Fresh Berries and Mint</h6>
-
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-2.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Wedding Cake with Flowers Macarons and Blueberries</h6>
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-3.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Cheesecake with Chocolate Cookies and Cream Biscuits</h6>
-
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-4.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Cheesecake with Chocolate Cookies and Cream Biscuits</h6>
-
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-5.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Homemade Cheesecake with Fresh Berries and Mint</h6>
-
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="card flex-row">
-                          <div class="w-50 position-relative">
-                              <img class="card-img-left" src="/img/portfolio-6.jpg" alt="Card image cap">
-                              <span class="badge badge-pill badge-primary position-absolute badge-top-left">New</span>
-                          </div>
-                          <div class="w-50">
-                              <div class="card-body">
-                                  <h6 class="mb-4">Cheesecake with Chocolate Cookies and Cream Biscuits</h6>
-                                  <footer>
-                                      <p class="text-muted text-small mb-0 font-weight-light">09.04.2018</p>
-                                  </footer>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="slider-nav text-center">
-                      <a href="#" class="left-arrow owl-prev">
-                          <i class="ik ik-chevron-left"></i>
-                      </a>
-                      <div class="slider-dot-container"></div>
-                      <a href="#" class="right-arrow owl-next">
-                          <i class="ik ik-chevron-right"></i>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
                         <div class="row align-items-center">
-                            <div class="col-lg-8 col-md-12">
-                                <h3 class="card-title">Visitors By Countries</h3>
-                                <div id="visitfromworld" style="width:100%; height:350px"></div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="row mb-15">
-                                    <div class="col-9">India</div>
-                                    <div class="col-3 text-right">28%</div>
-                                    <div class="col-12">
-                                        <div class="progress progress-sm mt-5">
-                                            <div class="progress-bar bg-green" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                            <div class="col-lg-12 col-md-12">
+                                <h3 class="card-title">Anlık Veri</h3>
+                                <h5 style="color: red; text-align: center;">NOT: Anlık veri analizi sadece "fr02" modeli ile çalışmaktadır.</h5>
+                                <main class="main">
+                                  <div class="gauge-container row">
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                      <div class="gauge1"></div>
                                     </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-9"> UK</div>
-                                    <div class="col-3 text-right">21%</div>
-                                    <div class="col-12">
-                                        <div class="progress progress-sm mt-5">
-                                            <div class="progress-bar bg-aqua" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                      <div class="gauge2"></div>
                                     </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-9"> USA</div>
-                                    <div class="col-3 text-right">18%</div>
-                                    <div class="col-12">
-                                        <div class="progress progress-sm mt-5">
-                                            <div class="progress-bar bg-purple" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                      <div class="gauge3"></div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-9">China</div>
-                                    <div class="col-3 text-right">12%</div>
-                                    <div class="col-12">
-                                        <div class="progress progress-sm mt-5">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                  </div>
+                            </main>
+
+                                <svg width="0" height="0" version="1.1" class="gradient-mask" xmlns="http://www.w3.org/2000/svg">
+                                  <defs>
+                                    <linearGradient id="gradientGauge">
+                                    <stop class="color-red" offset="0%"/>
+                                    <stop class="color-yellow" offset="17%"/>
+                                    <stop class="color-green" offset="40%"/>
+                                    <stop class="color-yellow" offset="87%"/>
+                                    <stop class="color-red" offset="100%"/>
+                                    </linearGradient>
+                                  </defs>  
+                                </svg>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="min-height: 422px;">
-                    <div class="card-header"><h3>Donut chart</h3></div>
-                    <div class="card-body">
-                        <div id="c3-donut-chart"></div>
                     </div>
                 </div>
             </div>
@@ -330,520 +199,317 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="card">
-            <div class="card-header row">
-                <div class="col col-sm-3">
-                    <div class="dropdown d-inline-block">
-                        <a class="btn-icon checkbox-dropdown dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                        <div class="dropdown-menu" aria-labelledby="moreDropdown">
-                            <a class="dropdown-item" id="checkbox_select_all" href="javascript:void(0);">Select All</a>
-                            <a class="dropdown-item" id="checkbox_deselect_all" href="javascript:void(0);">Deselect All</a>
-                        </div>
-                    </div>
-                    <div class="card-options d-inline-block">
-                        <a href="#"><i class="ik ik-inbox"></i></a>
-                        <a href="#"><i class="ik ik-plus"></i></a>
-                        <a href="#"><i class="ik ik-rotate-cw"></i></a>
-                        <div class="dropdown d-inline-block">
-                            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-more-horizontal"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">More Action</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6">
-                    <div class="card-search with-adv-search dropdown">
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="Search.." required>
-                            <button type="submit" class="btn btn-icon"><i class="ik ik-search"></i></button>
-                            <button type="button" id="adv_wrap_toggler" class="adv-btn ik ik-chevron-down dropdown-toggle" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                            <div class="adv-search-wrap dropdown-menu dropdown-menu-right" aria-labelledby="adv_wrap_toggler">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <button class="btn btn-theme">Search</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col col-sm-3">
-                    <div class="card-options text-right">
-                        <span class="mr-5">1 - 50 of 2,500</span>
-                        <a href="#"><i class="ik ik-chevron-left"></i></a>
-                        <a href="#"><i class="ik ik-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body p-0">
-                <div class="list-item-wrap">
-                    <div class="list-item">
-                        <div class="item-inner">
-                            <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
-                                <span class="custom-control-label">&nbsp;</span>
-                            </label>
-                            <div class="list-title"><a href="javascript:void(0)">Lorem Ipsum is simply dumm dummy text of the printing and typesetting industry.</a></div>
-                            <div class="list-actions">
-                                <a href="#"><i class="ik ik-eye"></i></a>
-                                <a href="#"><i class="ik ik-inbox"></i></a>
-                                <a href="#"><i class="ik ik-edit-2"></i></a>
-                                <a href="#"><i class="ik ik-trash-2"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="qickview-wrap">
-                            <div class="desc">
-                                <p>Fusce suscipit turpis a dolor posuere ornare at a ante. Quisque nec libero facilisis, egestas tortor eget, mattis dui. Curabitur viverra laoreet ligula at hendrerit. Nullam sollicitudin maximus leo, vel pulvinar orci semper id. Donec vehicula tempus enim a facilisis. Proin dignissim porttitor sem, sed pulvinar tortor gravida vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="item-inner">
-                            <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option2">
-                                <span class="custom-control-label">&nbsp;</span>
-                            </label>
-                            <div class="list-title"><a href="javascript:void(0)">Aenean eu pharetra arcu, vitae elementum sem. Sed non ligula molestie, finibus lacus at, suscipit mi. Nunc luctus lacus vel felis blandit, eu finibus augue tincidunt.</a></div>
-                            <div class="list-actions">
-                                <a href="#"><i class="ik ik-eye"></i></a>
-                                <a href="#"><i class="ik ik-inbox"></i></a>
-                                <a href="#"><i class="ik ik-edit-2"></i></a>
-                                <a href="#"><i class="ik ik-trash-2"></i></a>
-                            </div>
-                        </div>
-                        <div class="qickview-wrap">
-                            <div class="desc">
-                                <p>Fusce suscipit turpis a dolor posuere ornare at a ante. Quisque nec libero facilisis, egestas tortor eget, mattis dui. Curabitur viverra laoreet ligula at hendrerit. Nullam sollicitudin maximus leo, vel pulvinar orci semper id. Donec vehicula tempus enim a facilisis. Proin dignissim porttitor sem, sed pulvinar tortor gravida vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="item-inner">
-                            <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option3">
-                                <span class="custom-control-label">&nbsp;</span>
-                            </label>
-                            <div class="list-title"><a href="javascript:void(0)">Donec lectus augue, suscipit in sodales sit amet, semper sit amet enim. Duis pretium, nisi id pretium ornare, tortor nibh sodales tellus.</a></div>
-                            <div class="list-actions">
-                                <a href="#"><i class="ik ik-eye"></i></a>
-                                <a href="#"><i class="ik ik-inbox"></i></a>
-                                <a href="#"><i class="ik ik-edit-2"></i></a>
-                                <a href="#"><i class="ik ik-trash-2"></i></a>
-                            </div>
-                        </div>
-                        <div class="qickview-wrap">
-                            <div class="desc">
-                                <p>Fusce suscipit turpis a dolor posuere ornare at a ante. Quisque nec libero facilisis, egestas tortor eget, mattis dui. Curabitur viverra laoreet ligula at hendrerit. Nullam sollicitudin maximus leo, vel pulvinar orci semper id. Donec vehicula tempus enim a facilisis. Proin dignissim porttitor sem, sed pulvinar tortor gravida vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header row">
-                <div class="col col-sm-3">
-                    <div class="card-options d-inline-block">
-                        <a href="#"><i class="ik ik-inbox"></i></a>
-                        <a href="#"><i class="ik ik-plus"></i></a>
-                        <a href="#"><i class="ik ik-rotate-cw"></i></a>
-                        <div class="dropdown d-inline-block">
-                            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-more-horizontal"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">More Action</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6">
-                    <div class="card-search with-adv-search dropdown">
-                        <form action="">
-                            <input type="text" class="form-control global_filter" id="global_filter" placeholder="Search.." required>
-                            <button type="submit" class="btn btn-icon"><i class="ik ik-search"></i></button>
-                            <button type="button" id="adv_wrap_toggler" class="adv-btn ik ik-chevron-down dropdown-toggle" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                            <div class="adv-search-wrap dropdown-menu dropdown-menu-right" aria-labelledby="adv_wrap_toggler">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col0_filter" placeholder="Name" data-column="0">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col1_filter" placeholder="Position" data-column="1">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col2_filter" placeholder="Office" data-column="2">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col3_filter" placeholder="Age" data-column="3">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col4_filter" placeholder="Start date" data-column="4">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control column_filter" id="col5_filter" placeholder="Salary" data-column="5">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-theme">Search</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col col-sm-3">
-                    <div class="card-options text-right">
-                        <span class="mr-5" id="top">1 - 50 of 2,500</span>
-                        <a href="#"><i class="ik ik-chevron-left"></i></a>
-                        <a href="#"><i class="ik ik-chevron-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <table id="advanced_table" class="table">
-                    <thead>
-                        <tr>
-                            <th class="nosort" width="10">
-                                <label class="custom-control custom-checkbox m-0">
-                                    <input type="checkbox" class="custom-control-input" id="selectall" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </th>
-                            <th class="nosort">Avatar</th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/1.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/2.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/3.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>66</td>
-                            <td>2009/01/12</td>
-                            <td>$86,000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/4.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Cedric Kelly</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>Edinburgh</td>
-                            <td>22</td>
-                            <td>2012/03/29</td>
-                            <td>$433,060</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/5.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Airi Satou</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>33</td>
-                            <td>2008/11/28</td>
-                            <td>$162,700</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/1.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Brielle Williamson</td>
-                            <td>Integration Specialist</td>
-                            <td>New York</td>
-                            <td>61</td>
-                            <td>2012/12/02</td>
-                            <td>$372,000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/2.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Herrod Chandler</td>
-                            <td>Sales Assistant</td>
-                            <td>San Francisco</td>
-                            <td>59</td>
-                            <td>2012/08/06</td>
-                            <td>$137,500</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/3.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Rhona Davidson</td>
-                            <td>Integration Specialist</td>
-                            <td>Tokyo</td>
-                            <td>55</td>
-                            <td>2010/10/14</td>
-                            <td>$327,900</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input select_all_child" id="" name="" value="option2">
-                                    <span class="custom-control-label">&nbsp;</span>
-                                </label>
-                            </td>
-                            <td><img src="img/users/4.jpg" class="table-user-thumb" alt=""></td>
-                            <td>Colleen Hurst</td>
-                            <td>Javascript Developer</td>
-                            <td>San Francisco</td>
-                            <td>39</td>
-                            <td>2009/09/15</td>
-                            <td>$205,500</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<aside class="right-sidebar">
-    <div class="sidebar-chat" data-plugin="chat-sidebar">
-        <div class="sidebar-chat-info">
-            <h6>Chat List</h6>
-            <form class="mr-t-10">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search for friends ..."> 
-                    <i class="ik ik-search"></i>
-                </div>
-            </form>
-        </div>
-        <div class="chat-list">
-            <div class="list-group row">
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Gene Newman">
-                    <figure class="user--online">
-                        <img src="img/users/1.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Gene Newman</span>  <span class="username">@gene_newman</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Billy Black">
-                    <figure class="user--online">
-                        <img src="img/users/2.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Billy Black</span>  <span class="username">@billyblack</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Herbert Diaz">
-                    <figure class="user--online">
-                        <img src="img/users/3.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Herbert Diaz</span>  <span class="username">@herbert</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Sylvia Harvey">
-                    <figure class="user--busy">
-                        <img src="img/users/4.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Sylvia Harvey</span>  <span class="username">@sylvia</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item active" data-chat-user="Marsha Hoffman">
-                    <figure class="user--busy">
-                        <img src="img/users/5.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Marsha Hoffman</span>  <span class="username">@m_hoffman</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Mason Grant">
-                    <figure class="user--offline">
-                        <img src="img/users/1.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Mason Grant</span>  <span class="username">@masongrant</span> </span>
-                </a>
-                <a href="javascript:void(0)" class="list-group-item" data-chat-user="Shelly Sullivan">
-                    <figure class="user--offline">
-                        <img src="img/users/2.jpg" class="rounded-circle" alt="">
-                    </figure><span><span class="name">Shelly Sullivan</span>  <span class="username">@shelly</span></span>
-                </a>
-            </div>
-        </div>
-    </div>
-</aside>
-
-<div class="chat-panel" hidden>
-    <div class="card">
-        <div class="card-header d-flex justify-content-between">
-            <a href="javascript:void(0);"><i class="ik ik-message-square text-success"></i></a>  
-            <span class="user-name">John Doe</span> 
-            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="card-body">
-            <div class="widget-chat-activity flex-1">
-                <div class="messages">
-                    <div class="message media reply">
-                        <figure class="user--online">
-                            <a href="#">
-                                <img src="img/users/3.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>Epic Cheeseburgers come in all kind of styles.</p>
-                        </div>
-                    </div>
-                    <div class="message media">
-                        <figure class="user--online">
-                            <a href="#">
-                                <img src="img/users/1.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>Cheeseburgers make your knees weak.</p>
-                        </div>
-                    </div>
-                    <div class="message media reply">
-                        <figure class="user--offline">
-                            <a href="#">
-                                <img src="img/users/5.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>Cheeseburgers will never let you down.</p>
-                            <p>They'll also never run around or desert you.</p>
-                        </div>
-                    </div>
-                    <div class="message media">
-                        <figure class="user--online">
-                            <a href="#">
-                                <img src="img/users/1.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>A great cheeseburger is a gastronomical event.</p>
-                        </div>
-                    </div>
-                    <div class="message media reply">
-                        <figure class="user--busy">
-                            <a href="#">
-                                <img src="img/users/5.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>There's a cheesy incarnation waiting for you no matter what you palete preferences are.</p>
-                        </div>
-                    </div>
-                    <div class="message media">
-                        <figure class="user--online">
-                            <a href="#">
-                                <img src="img/users/1.jpg" class="rounded-circle" alt="">
-                            </a>
-                        </figure>
-                        <div class="message-body media-body">
-                            <p>If you are a vegan, we are sorry for you loss.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <form action="javascript:void(0)" class="card-footer" method="post">
-            <div class="d-flex justify-content-end">
-                <textarea class="border-0 flex-1" rows="1" placeholder="Type your message here"></textarea>
-                <button class="btn btn-icon" type="submit"><i class="ik ik-arrow-right text-success"></i></button>
-            </div>
-        </form>
     </div>
 </div>
 @endsection
 @section('javascript')
 <script type="text/javascript">
-  $(document).ready(function() {
-    $().owlCarousel && ($(".owl-carousel.basic").length > 0 && $(".owl-carousel.basic").owlCarousel({
-        margin: 30,
-        stagePadding: 15,
-        dotsContainer: $(".owl-carousel.basic").parents(".owl-container").find(".slider-dot-container"),
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    }).data("owl.carousel").onResize(), $(".owl-carousel.single").length > 0 && $(".owl-carousel.single").owlCarousel({
-        margin: 30,
-        items: 1,
-        loop: !0,
-        stagePadding: 15,
-        dotsContainer: $(".owl-carousel.single").parents(".owl-container").find(".slider-dot-container")
-    }).data("owl.carousel").onResize(), $(".owl-dot").click(function() {
-        $($(this).parents(".owl-container").find(".owl-carousel")).owlCarousel().trigger("to.owl.carousel", [$(this).index(), 300])
-    }), $(".owl-prev").click(function(e) {
-        e.preventDefault(), $($(this).parents(".owl-container").find(".owl-carousel")).owlCarousel().trigger("prev.owl.carousel", [300])
-    }), $(".owl-next").click(function(e) {
-        e.preventDefault(), $($(this).parents(".owl-container").find(".owl-carousel")).owlCarousel().trigger("next.owl.carousel", [300])
-    }));
-  });
+    $(function () {
+
+      class GaugeChart {
+      constructor(element, params) {
+        this._element = element;
+        this._initialValue = params.initialValue;
+        this._higherValue = params.higherValue;
+        this._title = params.title;
+        this._subtitle = params.subtitle;
+      }
+
+      _buildConfig() {
+        let element = this._element;
+
+        return {
+        value: this._initialValue,
+        valueIndicator: {
+          color: '#000' },
+
+        geometry: {
+          startAngle: 180,
+          endAngle: 360 },
+
+        scale: {
+          startValue: -30,
+          endValue: this._higherValue,
+          customTicks: [-30, -20, -10, 0, 10, 20, 30, 40, 50, 60],
+          tick: {
+          length: 10 },
+
+          label: {
+          font: {
+            color: '#87959f',
+            size: 9,
+            family: '"Open Sans", sans-serif' } } },
+
+
+
+        title: {
+          verticalAlignment: 'bottom',
+          text: this._title,
+          font: {
+          family: '"Open Sans", sans-serif',
+          color: '#000',
+          size: 18 },
+
+          subtitle: {
+          text: this._subtitle,
+          font: {
+            family: '"Open Sans", sans-serif',
+            color: '#000',
+            weight: 700,
+            size: 18 } } },
+
+
+
+        onInitialized: function () {
+          let currentGauge = $(element);
+          let circle = currentGauge.find('.dxg-spindle-hole').clone();
+          let border = currentGauge.find('.dxg-spindle-border').clone();
+
+          currentGauge.find('.dxg-title text').first().attr('y', 48);
+          currentGauge.find('.dxg-title text').last().attr('y', 28);
+          currentGauge.find('.dxg-value-indicator').append(border, circle);
+        } };
+
+
+      }
+
+      init() {
+        $(this._element).dxCircularGauge(this._buildConfig());
+      }}
+      
+      class GaugeChartNem {
+      constructor(element, params) {
+        this._element = element;
+        this._initialValue = params.initialValue;
+        this._higherValue = params.higherValue;
+        this._title = params.title;
+        this._subtitle = params.subtitle;
+      }
+
+      _buildConfig() {
+        let element = this._element;
+
+        return {
+        value: this._initialValue,
+        valueIndicator: {
+          color: '#000' },
+
+        geometry: {
+          startAngle: 180,
+          endAngle: 360 },
+
+        scale: {
+          startValue: 0,
+          endValue: this._higherValue,
+          customTicks: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+          tick: {
+          length: 10 },
+
+          label: {
+          font: {
+            color: '#87959f',
+            size: 9,
+            family: '"Open Sans", sans-serif' } } },
+
+
+
+        title: {
+          verticalAlignment: 'bottom',
+          text: this._title,
+          font: {
+          family: '"Open Sans", sans-serif',
+          color: '#000',
+          size: 18 },
+
+          subtitle: {
+          text: this._subtitle,
+          font: {
+            family: '"Open Sans", sans-serif',
+            color: '#000',
+            weight: 700,
+            size: 18 } } },
+
+
+
+        onInitialized: function () {
+          let currentGauge = $(element);
+          let circle = currentGauge.find('.dxg-spindle-hole').clone();
+          let border = currentGauge.find('.dxg-spindle-border').clone();
+
+          currentGauge.find('.dxg-title text').first().attr('y', 48);
+          currentGauge.find('.dxg-title text').last().attr('y', 28);
+          currentGauge.find('.dxg-value-indicator').append(border, circle);
+        } };
+
+
+      }
+
+      init() {
+        $(this._element).dxCircularGauge(this._buildConfig());
+      }}
+
+
+      $(document).ready(function () {
+      
+      let ortam = {
+        initialValue: 0,
+        higherValue: 60,
+        title: 'Ortam',
+        subtitle: '00.00 &deg;C'
+      };
+      
+      let nem = {
+        initialValue: 0,
+        higherValue: 100,
+        title: 'Nem',
+        subtitle: '00.00 %'
+      };
+      
+      let dolap = {
+        initialValue: 0,
+        higherValue: 60,
+        title: 'Dolap',
+        subtitle: '00.00 &deg;C'
+      };
+
+      let ortamGauge = new GaugeChart($('.gauge1'), ortam);
+      ortamGauge.init();
+      
+      let nemGauge = new GaugeChartNem($('.gauge2'), nem);
+      nemGauge.init();
+      
+      let dolapGauge = new GaugeChart($('.gauge3'), dolap);
+      dolapGauge.init();
+
+      $('#random').click(function () {
+
+        $('.gauge1').each(function (index, item) {
+        console.log(item);
+        let gauge = $(item).dxCircularGauge('instance');
+        let randomNum = Math.round(Math.random() * 1560);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`${randomNum} &deg;C`);
+        gauge.value(randomNum);
+        });
+      });
+      });
+
+    });
+    var client = new Paho.MQTT.Client('app.farmakit.com', 9001, "clientId");
+    
+    client.onConnectionLost = onConnectionLost;
+    client.onMessageArrived = onMessageArrived;
+    
+    client.connect({
+      onSuccess:onConnect,
+      onFailure:onFailure
+    });
+    
+    function onConnect() {
+      
+      console.log("onConnect");
+      client.subscribe("1/sensor/ortam");
+      client.subscribe("1/sensor/dolap");
+      client.subscribe("1/sensor/nem");
+    }
+
+    function onFailure() {
+        let gauge = $('.gauge1').dxCircularGauge('instance');
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`-- &deg;C`);
+        gauge.value(0);
+
+        let gauge1 = $('.gauge3').dxCircularGauge('instance');
+        let gaugeElement1 = $(gauge1._$element[0]);
+
+        gaugeElement1.find('.dxg-title text').last().html(`-- &deg;C`);
+        gauge1.value(0);
+
+        let gauge2 = $('.gauge2').dxCircularGauge('instance');
+        let gaugeElement2 = $(gauge2._$element[0]);
+
+        gaugeElement2.find('.dxg-title text').last().html(`-- %`);
+        gauge2.value(0);
+    }
+    
+    // called when the client loses its connection
+    function onConnectionLost(responseObject) {
+      if (responseObject.errorCode !== 0) {
+      console.log("onConnectionLost:"+responseObject.errorMessage);
+        let gauge = $('.gauge1').dxCircularGauge('instance');
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`-- &deg;C`);
+        gauge.value(0);
+
+        let gauge1 = $('.gauge3').dxCircularGauge('instance');
+        let gaugeElement1 = $(gauge1._$element[0]);
+
+        gaugeElement1.find('.dxg-title text').last().html(`-- &deg;C`);
+        gauge1.value(0);
+
+        let gauge2 = $('.gauge2').dxCircularGauge('instance');
+        let gaugeElement2 = $(gauge2._$element[0]);
+
+        gaugeElement2.find('.dxg-title text').last().html(`-- %`);
+        gauge2.value(0);
+      }
+    }
+    
+    function onMessageArrived(message) {
+      if(message.destinationName == "1/sensor/ortam") {
+      if(message.payloadString == "nan") {
+        let gauge = $('.gauge1').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`NaN &deg;C`);
+        gauge.value(0);
+      } else {
+        let gauge = $('.gauge1').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`${newValue} &deg;C`);
+        gauge.value(newValue);
+      }
+      }
+      if(message.destinationName == "1/sensor/dolap") {
+      if(message.payloadString == "nan") {
+        let gauge = $('.gauge3').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`NaN &deg;C`);
+        gauge.value(0);
+      } else {
+        let gauge = $('.gauge3').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`${newValue} &deg;C`);
+        gauge.value(newValue);
+      }
+      }
+      if(message.destinationName == "1/sensor/nem") {
+      if(message.payloadString == "nan") {
+        let gauge = $('.gauge2').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`NaN %`);
+        gauge.value(0);
+      } else {
+        let gauge = $('.gauge2').dxCircularGauge('instance');
+        let newValue = parseFloat(message.payloadString);
+        let gaugeElement = $(gauge._$element[0]);
+
+        gaugeElement.find('.dxg-title text').last().html(`${newValue} %`);
+        gauge.value(newValue);
+      }
+      }
+    }
 </script>
 @endsection

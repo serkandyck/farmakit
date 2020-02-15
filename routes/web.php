@@ -13,6 +13,8 @@
 
 Route::middleware(['auth:web'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('settings', 'SettingsController@index')->name('settings');
+    Route::post('settings/update-password', 'UserController@changePassword')->name('updatePassword');
 
     Route::middleware(['is_admin'])->group(function () {
         Route::prefix('admin')->group(function () {

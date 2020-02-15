@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="/plugins/c3/c3.min.css">
         <link rel="stylesheet" href="/plugins/owl.carousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="/plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
-        <link rel="stylesheet" href="/dist/css/theme.min.css">
+        <link rel="stylesheet" href="/dist/css/theme.css">
         <script src="/src/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -151,6 +151,8 @@
         <script src="/js/widgets.js"></script>
         <script src="/js/charts.js"></script>
         <script src="/dist/js/theme.min.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/17.1.6/js/dx.all.js" type="text/javascript"></script>
+        <script src="/js/mqtt/mqttws31.min.js" type="text/javascript"></script>
         @yield('javascript')
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
